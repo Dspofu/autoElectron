@@ -1,0 +1,3 @@
+out/main.exe
+.vscode/*
+!.vscode/settings.json

@@ -5,7 +5,7 @@ void OptionRun::run(std::function<int()> main) {
   std::string inp;
   std::cout << "\033[33mFolders detected:\n" << std::endl;
   std::filesystem::path path = std::filesystem::current_path();
-  int countPath = 0;
+  int countPath = 0;""
   for (const auto &entry: std::filesystem::directory_iterator(path/inp)) {
     if (std::filesystem::is_directory(entry.status())) {
       if (entry.path() == path/"node_modules") { std::cout << "\033[31mX " << entry.path() << std::endl; }
